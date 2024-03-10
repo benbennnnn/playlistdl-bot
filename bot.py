@@ -7,9 +7,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 dotenv_file = dotenv.find_dotenv()
 dotenv.load_dotenv(dotenv_file, override=True)
 
-API_ID = int(os.getenv("29051507"))
-API_HASH = os.getenv("c3390b5ace39766d7c207a7cb8c3eee3")
-BOT_TOKEN = os.getenv("6770770916:AAHhvXqWnKl1MYTe5GLJTIYGjn0kNRPlymY")
+API_ID = int(os.getenv("TG_API_ID"))
+API_HASH = os.getenv("TG_API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 LOG_GROUP = int(os.getenv("LOG_GROUP_ID"))
 is_win = platform.system()=='Windows'
 
